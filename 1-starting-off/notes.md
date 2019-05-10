@@ -1,0 +1,1 @@
+The equality operators are `=` and `<>` and not `==` and `!=`. 
