@@ -1,0 +1,4 @@
+"Rule: ocaml: ml -> cmo & cmi (%=hello )": "\002\171\173\030\230\002.\149\213\006\029\155z\171D\168"
+"Resource: /home/samatar/dev/ocaml-from-the-very-beginning/1-starting-off/hello.ml": "\244\016yn\156D\159\251v\246\233\136\012&\020\193"
+"Rule: ocaml dependencies ml (%=hello )": "n\012[P\134\175\128\182U\254PnR\129m\254"
+"Rule: ocaml: cmo* -> byte (%=hello )": "'f\164i]GRXv\155K\028~Z\180\161"
