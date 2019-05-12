@@ -14,3 +14,7 @@ Instead of running the compiler directly, you'd want to use the Ocaml build syst
 You can also clean up the compiled code by running `ocamlbuild -clean`.
 
 Not sure how dune comes into all of this, but will find out!
+
+## Loading code in the toplevel 
+
+You can use _directives_ that are not OCaml code to tell the toplevel to do something. **#use** allows you to load code from a file into the toplevel.
