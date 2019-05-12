@@ -18,28 +18,28 @@ decide on the case of a given letter.
 let not x = 
   match x with 
     true -> false
-  | false -> true;;
+  | false -> true
 
 let rec sum x = 
   match x with 
     1 -> 1
-  | _ -> x + sum (x -1);;
+  | _ -> x + sum (x -1)
 
 let rec power x n = 
   match n with 
     0 -> 1 
-  | _ -> x * power x (n -1);;
+  | _ -> x * power x (n -1)
 
 
 let isLower x = 
   match x with 
   'a' .. 'z' -> true 
-  | _ -> false;;
+  | _ -> false
 
 let isUpper x = 
   match x with 
   'A' .. 'Z' -> true 
-  | _ -> false;;
+  | _ -> false
 
 (* 
 Can't really do not (isLower x) for the isUpper solution, 

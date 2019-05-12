@@ -14,20 +14,20 @@
    We can simply return 0 for a negative or zero argument.
 *)
 
-let multiplyByTen (x: int) : int = x * 10;;
+let multiplyByTen (x: int) : int = x * 10
 
 let nonZero (x: int) (y: int): bool = 
-  x <> 0 && y <> 0;;
+  x <> 0 && y <> 0
 
 let rec sum n = 
-  if n = 1 then 1 else n + sum (n -   1);;
+  if n = 1 then 1 else n + sum (n -   1)
 
 let rec power (x:int) (n:int) : int = 
-  if n = 0 then 1 else x * power x (n - 1);;
+  if n = 0 then 1 else x * power x (n - 1)
 
-let not x = if x then false else true;; 
+let not x = if x then false else true
 
-let isVowel (x: char) : bool = x = 'a' || x = 'e' || x = 'u' || x = 'i' || x = 'o';;
+let isVowel (x: char) : bool = x = 'a' || x = 'e' || x = 'u' || x = 'i' || x = 'o'
 
-let isConsonant (x:char) : bool = not (isVowel x);;
+let isConsonant (x:char) : bool = not (isVowel x)
 
