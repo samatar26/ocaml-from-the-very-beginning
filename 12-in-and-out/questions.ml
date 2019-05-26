@@ -86,14 +86,20 @@ let table filename n =
        match row, column with 
        | x, y -> 
          if x = n && y = n then 
-           (output_string ch (string_of_int (x*y));
-            close_out ch )
+           begin 
+             output_string ch (string_of_int (x*y));
+             close_out ch 
+           end
          else if y = n then 
-           (output_string ch (string_of_int (x * y) ^ "\n");
-            write_table (x + 1) 1)
+           begin
+             output_string ch (string_of_int (x * y) ^ "\n");
+             write_table (x + 1) 1
+           end
          else 
-           (output_string ch (string_of_int (x * y) ^ "\t");
-            write_table x (y + 1))
+           begin
+             output_string ch (string_of_int (x * y) ^ "\t");
+             write_table x (y + 1)
+           end
   in write_table 1 1
 
 
